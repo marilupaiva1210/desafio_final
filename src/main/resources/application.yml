@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: native
+  mvc:
+    pathmatch:
+      matching-stratedy: ant-path-matcher
+  datasource:
+    url: jdbc:postgresql://projetodb.postgres.database.azure.com/desafio-api
+    username: diamond
+    password: NumSey33_
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: desafioedussincdiamond@gmail.com
+    password: yiaveplfxyrrugvd
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
